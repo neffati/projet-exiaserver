@@ -1,6 +1,6 @@
 .\"	$OpenBSD: mdoc.template,v 1.15 2014/03/31 00:09:54 dlg Exp $
 .\"
-.\" Copyright (c) YYYY YOUR NAME HERE <user@your.dom.ain>
+.\" Copyright (c) Hugo Leboeuf Logan Lamouar Aly Sall Aimen Neffati <hugo.leboeuf@viacesi.fr>
 .\"
 .\" Permission to use, copy, modify, and distribute this software for any
 .\" purpose with or without fee is hereby granted, provided that the above
@@ -20,37 +20,21 @@
 .Dd $\&Mdocdate$
 .Dt NAME SECTION#
 .Os
-.Sh NAME
-.Nm program
-.Nd one line about what it does
+.Sh FONCTIONNEMENT
+.Nm exiasaver
+Le programme lance un des 3 types d'ecrans de verouillage, le type statique, dynamique ou interactif.
 .Sh SYNOPSIS
-.\" For a program:  program [-abc] file ...
-.Nm program
-.Op Fl abc
-.Ar
-.Sh DESCRIPTION
-The
+.\" For a program:  exiasaver [type] [parametre] : Pour le type 1 correspond au statique, 2 pour dynamique et 3 pour interactif
+.Nm exiasaver
+.Op Fl type Parametre
 .Nm
-utility processes files ...
-.\" The following requests should be uncommented and used where appropriate.
-.\" .Sh CONTEXT
-.\" For section 9 functions only.
-.\" .Sh RETURN VALUES
-.\" For sections 2, 3, and 9 function return values only.
-.\" .Sh ENVIRONMENT
-.\" For sections 1, 6, 7, and 8 only.
-.\" .Sh FILES
-.\" .Sh EXIT STATUS
-.\" For sections 1, 6, and 8 only.
-.\" .Sh EXAMPLES
-.\" .Sh DIAGNOSTICS
-.\" For sections 1, 4, 6, 7, 8, and 9 printf/stderr messages only.
-.\" .Sh ERRORS
-.\" For sections 2, 3, 4, and 9 errno settings only.
-.\" .Sh SEE ALSO
-.\" .Xr foobar 1
-.\" .Sh STANDARDS
-.\" .Sh HISTORY
-.\" .Sh AUTHORS
-.\" .Sh CAVEATS
-.\" .Sh BUGS
+.Ar [type] : 1 pour statique, 2 pour dynamique, 3 pour interactif
+.Nm
+.Ar [parametre] : Si type 1: Rajouter l'adresse de l'image (Ex:"pokeball.pbm"). Si type 2: Rajouter la resolution ("1","2","3","4"ou"5"). Si type 3: Choisir les coordornees de depart de l'avion de 0 a 80 (Ex:"30x10")
+.Nm
+.Op Fl stats
+.Nm
+.Ar [stats] : Lance le menu du programme
+
+.Sh DESCRIPTION
+L'Exiasaver est un projet realise en decembre 2016 dans le cadre d'un projet d'etude visant a developper un ecran de verrouillage original pour console linux.
